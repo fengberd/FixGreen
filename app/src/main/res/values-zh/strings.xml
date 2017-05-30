@@ -8,6 +8,8 @@
     <string name="label_description">这是一个修复旧版本Android中图片压缩Bug的Xposed模块</string>
     <string name="label_android_status_pass">你的Android版本小于7.0.</string>
     <string name="label_android_status_fail">你的Android版本是7.0或更高,图片压缩Bug已被修复,此模块将不会生效.</string>
+    <string name="label_xposed_status_pass">Xposed框架已安装,模块已启用.</string>
+    <string name="label_xposed_status_fail">Xposed框架未安装或模块未启用,此模块将不会生效.</string>
 
     <string name="button_hide_from_launcher">隐藏APP图标</string>
 </resources>

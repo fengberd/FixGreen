@@ -19,6 +19,18 @@ public class EventListener implements IXposedHookLoadPackage
 	@SuppressWarnings("deprecation")
 	public void handleLoadPackage(final LoadPackageParam aparam) throws Throwable
 	{
+		if("moe.berd.android.xposed.fixgreen".equals(aparam.packageName))
+		{
+			XposedHelpers.findAndHookMethod("moe.berd.android.xposed.fixgreen.MainActivity",aparam.classLoader,"itWorks",new XC_MethodHook()
+			{
+				@Override
+				protected void beforeHookedMethod(MethodHookParam param) throws Throwable
+				{
+					param.setResult(true);
+				}
+			});
+			return;
+		}
 		if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.N)
 		{
 			return;
@@ -47,12 +59,6 @@ public class EventListener implements IXposedHookLoadPackage
 						param.setResult(false);
 					}
 				}
-			}
-
-			@Override
-			protected void afterHookedMethod(MethodHookParam param) throws Throwable
-			{
-
 			}
 		});
 	}

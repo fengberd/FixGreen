@@ -8,6 +8,8 @@
     <string name="label_description">This is a xposed module to fix android image compressing bug.</string>
     <string name="label_android_status_pass">Your android is lower than 7.0.</string>
     <string name="label_android_status_fail">Your android is 7.0 or higher,there\'s no image compressing bug so this module will not work.</string>
+    <string name="label_xposed_status_pass">Xposed Framework installed and the module is enabled.</string>
+    <string name="label_xposed_status_fail">Xposed Framework isn\'t installed correctly or this module is\'t enabled,this module will not work.</string>
 
     <string name="button_hide_from_launcher">Hide app\'s icon</string>
 </resources>

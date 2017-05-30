@@ -27,6 +27,17 @@ public class MainActivity extends ActionBarActivity
 			text.setText(R.string.label_android_status_pass);
 			text.setTextColor(Color.GREEN);
 		}
+		text=(TextView)findViewById(R.id.label_xposed_status);
+		if(itWorks())
+		{
+			text.setText(R.string.label_xposed_status_pass);
+			text.setTextColor(Color.GREEN);
+		}
+		else
+		{
+			text.setText(R.string.label_xposed_status_fail);
+			text.setTextColor(Color.RED);
+		}
 		final MainActivity this_=this;
 		findViewById(R.id.button_hide_from_launcher).setOnClickListener(new View.OnClickListener()
 		{
@@ -49,5 +60,10 @@ public class MainActivity extends ActionBarActivity
 						.show();
 			}
 		});
+	}
+
+	public boolean itWorks()
+	{
+		return false;
 	}
 }
