@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FixGreen</string>
+
+    <string name="dialog_hide_title">操作确认</string>
+    <string name="dialog_hide_message">确定要将此APP的图标隐藏么?你可能需要重启启动器使操作生效.</string>
+
+    <string name="label_description">这是一个修复旧版本Android中图片压缩Bug的Xposed模块</string>
+    <string name="label_android_status_pass">你的Android版本小于7.0.</string>
+    <string name="label_android_status_fail">你的Android版本是7.0或更高,图片压缩Bug已被修复,此模块将不会生效.</string>
+
+    <string name="button_hide_from_launcher">隐藏APP图标</string>
+</resources>
